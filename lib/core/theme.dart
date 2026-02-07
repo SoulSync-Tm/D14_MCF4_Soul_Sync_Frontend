@@ -82,5 +82,23 @@ class AppTheme {
             ),
           ),
         ),
+        navigationBarTheme: NavigationBarThemeData(
+          backgroundColor: Colors.black.withOpacity(0.9),
+          indicatorColor: primaryColor.withOpacity(0.2),
+          labelTextStyle: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.selected)) {
+              return GoogleFonts.inter(
+                color: Colors.white,
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+              );
+            }
+            return GoogleFonts.inter(
+              color: Colors.white70,
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+            );
+          }),
+        ),
       );
 }
