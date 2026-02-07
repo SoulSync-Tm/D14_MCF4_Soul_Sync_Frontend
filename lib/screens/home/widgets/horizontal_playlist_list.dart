@@ -12,7 +12,7 @@ class HorizontalPlaylistList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 180,
+      height: 200, // Increased from 180 to 200 to fix overflow
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16),
