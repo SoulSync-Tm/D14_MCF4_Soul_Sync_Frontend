@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme.dart';
 import 'core/router.dart';
+import 'core/api_client.dart';
 
 void main() {
+  // Initialize API client
+  ApiClient().initialize();
+  
   runApp(
     const ProviderScope(
       child: SoulSyncApp(),
